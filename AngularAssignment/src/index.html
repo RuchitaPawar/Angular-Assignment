@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Angular QuickStart</title>
+    <base href="/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+    <script src="systemjs.config.js"></script>
+    <script>
+        System.import('main.js').catch(function (err) { console.error(err); });
+    </script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Roboto;
+        }
+
+        .sidenav2 {
+            height: 100%;
+            width: 160px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #B3BBC0;
+            overflow-x: hidden;
+            padding-top: 20px;
+            font-family: Roboto;
+            color: white
+        }
+
+
+        .sidenav {
+            height: 100%;
+            width: 160px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #B3BBC0;
+            overflow-x: hidden;
+            padding-top: 120px;
+            padding-left:20px;
+            font-family:
+        }
+
+            .sidenav a {
+                padding: 6px 8px 6px 16px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #818181;
+                display: block;
+            }
+
+                .sidenav a:hover {
+                    color: #f1f1f1;
+                }
+
+        .main {
+            margin-left: 200px; /* Same as the width of the sidenav */
+            font-size: 20px; /* Increased text to enable scrolling */
+            font-family: Roboto;
+            padding: 0px 10px;
+            color: #83A5BD;
+            height:40px;
+            align-content:center;
+            margin-top:40px;
+        }
+        .mainbody {
+            margin-left: 200px; /* Same as the width of the sidenav */
+            font-size: 16px; /* Increased text to enable scrolling */
+            font-family: Roboto;
+            color: #83A5BD;
+            height: 800px;
+            width: 600px;
+            color: dimgray;
+            align-content: center;
+            cursor: pointer;
+        }
+
+        @media screen and (max-height: 850px) {
+            .sidenav {
+                padding-top: 30px;
+            }
+
+                .sidenav a {
+                    font-size: 18px;
+                }
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--  <my-app>Loading AppComponent content here ...</my-app>      -->
+
+
+
+    <div class="sidenav">
+
+        <font color="white" ,size="20px" ,family="Roboto" ,
+
+              <p href="#momentmessage" >
+                  <b>
+                      MOMENT <br />
+                      MESSAGE </b>
+               </p>
+        </font>
+
+        <a href="#welcome"><b> Welcome</b></a>
+        <a href="#library"><b> Library</b> </a>
+
+    </div>
+
+
+    <div class="main">
+        <h2>MOMENT MESSAGE</h2>
+
+    </div>
+
+    <div class="mainbody">
+            <ol>
+                <li ng-mouseover="style={'border-bottom': '5px solid-red','background-color':'pink','cursor':'pointer'}" ng-mouseleave="style={}">
+                <b> Choose the moment </b> to define your topic in order to <br /> resonate and connect with the listener</li>
+                <br />
+                <br />
+
+                <li><b> Deliver the message </b>with purposeful words,establishing <br /> your value and point of view</li>
+                <br />
+                <br />
+
+                <li><b> Reveal the moment </b> through story,emotions and wisdom <br /> to establish personal application</li>
+                <br />
+                <br />
+
+                <li><b> Celebrate the measure </b> of success achieved through <br /> defined steps  calls to action</li>
+                <br />
+                <br />
+
+            </ol>
+
+    </div>
+
+
+
+
+</body>
+
+
+
+</html>
+
